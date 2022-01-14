@@ -6,43 +6,24 @@
     <title>My Awesome Company Contact Page</title>
   </head>
   <body>
-
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
+    <form method="POST">
+      <label for="fullname">Name</label>
+      <input type="text" required name="fullname" id="fullname" placeholder="Enter Name"/>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+      <label for="email">Email</label>
+      <input type="email" required name="email" id="email" placeholder="Enter Email"/>
 
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter Telephone (optional)"/>
 
-      <!-- Add a label for 'fullname'-->
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+      <input type="checkbox" name="checkbox" id="checkbox" value="newsletter"/>Subscribe to our newsletter.<br />
 
-
-      <!-- Add a label for 'email'-->
-
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
-
-
-      <!-- Add a label for 'phone'-->
-
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
-    
+      <input type="submit" name="submit" id="submit" value="Submit Form"/>
+    </form>
   </body>
 </html>
